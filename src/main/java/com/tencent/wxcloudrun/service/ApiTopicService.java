@@ -1,7 +1,7 @@
 package com.tencent.wxcloudrun.service;
 
 import com.tencent.wxcloudrun.dao.ApiTopicMapper;
-import com.tencent.wxcloudrun.vo.TopicVo;
+import com.tencent.wxcloudrun.model.TopicVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

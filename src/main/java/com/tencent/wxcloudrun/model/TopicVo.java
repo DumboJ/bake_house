@@ -1,4 +1,4 @@
-package com.tencent.wxcloudrun.vo;
+package com.tencent.wxcloudrun.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

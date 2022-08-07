@@ -1,7 +1,7 @@
 package com.tencent.wxcloudrun.dao;
 
 
-import com.tencent.wxcloudrun.vo.TopicVo;
+import com.tencent.wxcloudrun.model.TopicVo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

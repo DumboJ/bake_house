@@ -1,6 +1,6 @@
 package com.tencent.wxcloudrun.service;
 import com.tencent.wxcloudrun.dao.ApiBrandMapper;
-import com.tencent.wxcloudrun.vo.BrandVo;
+import com.tencent.wxcloudrun.model.BrandVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

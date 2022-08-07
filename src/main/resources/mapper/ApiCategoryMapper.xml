@@ -4,7 +4,7 @@
 <mapper namespace="com.tencent.wxcloudrun.dao.ApiCategoryMapper">
 
     <!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.tencent.wxcloudrun.vo.CategoryVo" id="categoryMap">
+    <resultMap type="com.tencent.wxcloudrun.model.CategoryVo" id="categoryMap">
         <result property="id" column="id"/>
         <result property="name" column="name"/>
         <result property="keywords" column="keywords"/>
@@ -65,7 +65,7 @@
 		select count(*) from nideshop_category 
 	</select>
 
-    <insert id="save" parameterType="com.tencent.wxcloudrun.vo.CategoryVo">
+    <insert id="save" parameterType="com.tencent.wxcloudrun.model.CategoryVo">
 		insert into nideshop_category
 		(
 			`id`, 
@@ -104,7 +104,7 @@
 		)
 	</insert>
 
-    <update id="update" parameterType="com.tencent.wxcloudrun.vo.CategoryVo">
+    <update id="update" parameterType="com.tencent.wxcloudrun.model.CategoryVo">
         update nideshop_category
         <set>
             <if test="name != null">`name` = #{name},</if>

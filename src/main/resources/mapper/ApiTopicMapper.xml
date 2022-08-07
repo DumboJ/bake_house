@@ -4,7 +4,7 @@
 <mapper namespace="com.tencent.wxcloudrun.dao.ApiTopicMapper">
 
     <!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.tencent.wxcloudrun.vo.TopicVo" id="topicMap">
+    <resultMap type="com.tencent.wxcloudrun.model.TopicVo" id="topicMap">
         <result property="id" column="id"/>
         <result property="title" column="title"/>
         <result property="content" column="content"/>
@@ -49,7 +49,7 @@
 		select count(*) from nideshop_topic 
 	</select>
 
-    <insert id="save" parameterType="com.tencent.wxcloudrun.vo.TopicVo" useGeneratedKeys="true" keyProperty="id">
+    <insert id="save" parameterType="com.tencent.wxcloudrun.model.TopicVo" useGeneratedKeys="true" keyProperty="id">
 		insert into nideshop_topic
 		(
 			`title`, 
@@ -80,7 +80,7 @@
 		)
 	</insert>
 
-    <update id="update" parameterType="com.tencent.wxcloudrun.vo.TopicVo">
+    <update id="update" parameterType="com.tencent.wxcloudrun.model.TopicVo">
         update nideshop_topic
         <set>
             <if test="title != null">`title` = #{title},</if>

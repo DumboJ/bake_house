@@ -1,7 +1,7 @@
 package com.tencent.wxcloudrun.service;
 
 import com.tencent.wxcloudrun.dao.ApiCategoryMapper;
-import com.tencent.wxcloudrun.vo.CategoryVo;
+import com.tencent.wxcloudrun.model.CategoryVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

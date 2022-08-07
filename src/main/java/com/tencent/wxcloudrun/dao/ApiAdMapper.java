@@ -1,6 +1,6 @@
 package com.tencent.wxcloudrun.dao;
 
-import com.tencent.wxcloudrun.vo.AdVo;
+import com.tencent.wxcloudrun.model.AdVo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

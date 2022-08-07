@@ -4,7 +4,7 @@
 <mapper namespace="com.tencent.wxcloudrun.dao.ApiCartMapper">
 
     <!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.tencent.wxcloudrun.vo.CartVo" id="cartMap">
+    <resultMap type="com.tencent.wxcloudrun.model.CartVo" id="cartMap">
         <result property="id" column="id"/>
         <result property="user_id" column="user_id"/>
         <result property="session_id" column="session_id"/>
@@ -76,7 +76,7 @@
         </if>
     </select>
 
-    <insert id="save" parameterType="com.tencent.wxcloudrun.vo.CartVo" useGeneratedKeys="true" keyProperty="id">
+    <insert id="save" parameterType="com.tencent.wxcloudrun.model.CartVo" useGeneratedKeys="true" keyProperty="id">
 		insert into nideshop_cart
 		(
 			`user_id`, 
@@ -111,7 +111,7 @@
 		)
 	</insert>
 
-    <update id="update" parameterType="com.tencent.wxcloudrun.vo.CartVo">
+    <update id="update" parameterType="com.tencent.wxcloudrun.model.CartVo">
         update nideshop_cart
         <set>
             <if test="user_id != null">`user_id` = #{user_id},</if>

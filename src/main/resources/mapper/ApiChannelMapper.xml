@@ -4,7 +4,7 @@
 <mapper namespace="com.tencent.wxcloudrun.dao.ApiChannelMapper">
 
     <!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.tencent.wxcloudrun.vo.ChannelVo" id="channelMap">
+    <resultMap type="com.tencent.wxcloudrun.model.ChannelVo" id="channelMap">
         <result property="id" column="id"/>
         <result property="name" column="name"/>
         <result property="url" column="url"/>
@@ -38,7 +38,7 @@
 		select count(*) from nideshop_channel 
 	</select>
 
-    <insert id="save" parameterType="com.tencent.wxcloudrun.vo.ChannelVo" useGeneratedKeys="true" keyProperty="id">
+    <insert id="save" parameterType="com.tencent.wxcloudrun.model.ChannelVo" useGeneratedKeys="true" keyProperty="id">
 		insert into nideshop_channel
 		(
 			`name`, 
@@ -55,7 +55,7 @@
 		)
 	</insert>
 
-    <update id="update" parameterType="com.tencent.wxcloudrun.vo.ChannelVo">
+    <update id="update" parameterType="com.tencent.wxcloudrun.model.ChannelVo">
         update nideshop_channel
         <set>
             <if test="name != null">`name` = #{name},</if>

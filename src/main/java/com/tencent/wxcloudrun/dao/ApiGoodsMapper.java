@@ -1,7 +1,7 @@
 package com.tencent.wxcloudrun.dao;
 
 
-import com.tencent.wxcloudrun.vo.GoodsVo;
+import com.tencent.wxcloudrun.model.GoodsVo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

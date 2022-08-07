@@ -4,7 +4,7 @@
 <mapper namespace="com.tencent.wxcloudrun.dao.ApiBrandMapper">
 
     <!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.tencent.wxcloudrun.vo.BrandVo" id="brandMap">
+    <resultMap type="com.tencent.wxcloudrun.model.BrandVo" id="brandMap">
         <result property="id" column="id"/>
         <result property="name" column="name"/>
         <result property="list_pic_url" column="list_pic_url"/>
@@ -49,7 +49,7 @@
 		select count(*) from nideshop_brand 
 	</select>
 
-    <insert id="save" parameterType="com.tencent.wxcloudrun.vo.BrandVo" useGeneratedKeys="true" keyProperty="id">
+    <insert id="save" parameterType="com.tencent.wxcloudrun.model.BrandVo" useGeneratedKeys="true" keyProperty="id">
 		insert into nideshop_brand
 		(
 			`name`, 
@@ -80,7 +80,7 @@
 		)
 	</insert>
 
-    <update id="update" parameterType="com.tencent.wxcloudrun.vo.BrandVo">
+    <update id="update" parameterType="com.tencent.wxcloudrun.model.BrandVo">
         update nideshop_brand
         <set>
             <if test="name != null">`name` = #{name},</if>

@@ -2,7 +2,7 @@ package com.tencent.wxcloudrun.service;
 
 
 import com.tencent.wxcloudrun.dao.ApiCartMapper;
-import com.tencent.wxcloudrun.vo.CartVo;
+import com.tencent.wxcloudrun.model.CartVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

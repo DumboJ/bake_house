@@ -2,10 +2,10 @@ package com.tencent.wxcloudrun.controller.api;
 
 import com.github.pagehelper.PageHelper;
 import com.tencent.wxcloudrun.config.ApiResponse;
+import com.tencent.wxcloudrun.model.*;
 import com.tencent.wxcloudrun.service.*;
 import com.tencent.wxcloudrun.service.impl.ApiAdService;
 import com.tencent.wxcloudrun.service.impl.ApiChannelService;
-import com.tencent.wxcloudrun.vo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

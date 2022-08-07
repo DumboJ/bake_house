@@ -2,7 +2,7 @@ package com.tencent.wxcloudrun.service.impl;
 
 
 import com.tencent.wxcloudrun.dao.ApiChannelMapper;
-import com.tencent.wxcloudrun.vo.ChannelVo;
+import com.tencent.wxcloudrun.model.ChannelVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

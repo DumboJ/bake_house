@@ -1,7 +1,7 @@
 package com.tencent.wxcloudrun.service;
 
 import com.tencent.wxcloudrun.dao.ApiGoodsMapper;
-import com.tencent.wxcloudrun.vo.GoodsVo;
+import com.tencent.wxcloudrun.model.GoodsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

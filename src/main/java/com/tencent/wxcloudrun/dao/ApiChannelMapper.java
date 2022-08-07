@@ -1,8 +1,7 @@
 package com.tencent.wxcloudrun.dao;
 
 
-import com.tencent.wxcloudrun.vo.ChannelVo;
-import org.apache.catalina.mapper.MappingData;
+import com.tencent.wxcloudrun.model.ChannelVo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

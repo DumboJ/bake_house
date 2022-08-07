@@ -4,7 +4,7 @@
 <mapper namespace="com.tencent.wxcloudrun.dao.ApiGoodsMapper">
 
     <!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.tencent.wxcloudrun.vo.GoodsVo" id="goodsMap">
+    <resultMap type="com.tencent.wxcloudrun.model.GoodsVo" id="goodsMap">
         <result property="id" column="id"/>
         <result property="category_id" column="category_id"/>
         <result property="goods_sn" column="goods_sn"/>
