@@ -48,7 +48,17 @@ public class CounterController {
     return ApiResponse.ok(count);
   }
 
+  /**
+   * 获取文本信息打印
+   * @return API response json
+   */
+  @GetMapping(value = "/api/getInfo")
+  ApiResponse getInfo() {
+    logger.info("/api/getInfo request");
+    String info = "云托管接口调试成功";
 
+    return ApiResponse.ok(info);
+  }
   /**
    * 更新计数，自增或者清零
    * @param request {@link CounterRequest}
