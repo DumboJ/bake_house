@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/index")
+@RequestMapping("/api/index/")
 public class IndexController {
 
     @Autowired

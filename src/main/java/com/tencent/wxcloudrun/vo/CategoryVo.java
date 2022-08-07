@@ -4,11 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 
-/**
- * @author lipengjun
- * @email 939961241@qq.com
- * @date 2017-08-15 08:03:39
- */
+
 public class CategoryVo implements Serializable {
     private static final long serialVersionUID = 1L;
 

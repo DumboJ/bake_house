@@ -4,11 +4,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 
-/**
- * @author lipengjun
- * @email 939961241@qq.com
- * @date 2017-08-15 08:03:41
- */
+
 public class TopicVo implements Serializable {
     private static final long serialVersionUID = 1L;
 
